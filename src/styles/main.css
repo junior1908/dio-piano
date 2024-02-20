@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+}
+
+main {
+  width: 780px;
+  border-radius: 20px;
+  border: 1px solid red;
+  padding: 35px 40px;
+}
+
+header h2 {
+  font-size: 1.6rem;
+}
+
+header .coluna {
+  display: flex;
+  align-items: center;
+}
+
+header .coluna span {
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 1.190rem;
+}
+
+.volume input {
+  accent-color: #fff;
+}
+
+.check-teclas input {
+  width: 60px;
+  height: 30px;
+  appearance: none;
+  border-radius: 30px;
+  background-color: #4b4b4b;
+  cursor: pointer;
+  position: relative;
+}
