@@ -4,38 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PianoBar</title>
+
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link rel="stylesheet" href="./src/styles/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
     <header>
       <h2>PianoBar Virtual</h2>
       <div class="coluna volume">
-        <span>Volume</span> <input type="range">
+        <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="0.05">
       </div>
       <div class="coluna check-teclas">
         <span>Teclas</span> <input type="checkbox" checked>
       </div>
     </header>
     <ul class="teclas-piano">
-      <li class="tecla branca"><span>a</span></li>
-      <li class="tecla preta"><span>w</span></li>
-      <li class="tecla branca"><span>s</span></li>
-      <li class="tecla preta"><span>e</span></li>
-      <li class="tecla branca"><span>d</span></li>
-      <li class="tecla branca"><span>f</span></li>
-      <li class="tecla preta"><span>t</span></li>
-      <li class="tecla branca"><span>g</span></li>
-      <li class="tecla preta"><span>y</span></li>
-      <li class="tecla branca"><span>h</span></li>
-      <li class="tecla preta"><span>u</span></li>
-      <li class="tecla branca"><span>j</span></li>
-      <li class="tecla branca"><span>k</span></li>
-      <li class="tecla preta"><span>o</span></li>
-      <li class="tecla branca"><span>l</span></li>
-      <li class="tecla preta"><span>p</span></li>
-      <li class="tecla branca"><span>;</span></li>
+      <li class="tecla branca" data-tecla="a"><span>a</span></li>
+      <li class="tecla preta" data-tecla="w"><span>w</span></li>
+      <li class="tecla branca" data-tecla="s"><span>s</span></li>
+      <li class="tecla preta" data-tecla="e"><span>e</span></li>
+      <li class="tecla branca" data-tecla="d"><span>d</span></li>
+      <li class="tecla branca" data-tecla="f"><span>f</span></li>
+      <li class="tecla preta" data-tecla="t"><span>t</span></li>
+      <li class="tecla branca" data-tecla="g"><span>g</span></li>
+      <li class="tecla preta" data-tecla="y"><span>y</span></li>
+      <li class="tecla branca" data-tecla="h"><span>h</span></li>
+      <li class="tecla preta" data-tecla="u"><span>u</span></li>
+      <li class="tecla branca" data-tecla="j"><span>j</span></li>
+      <li class="tecla branca" data-tecla="k"><span>k</span></li>
+      <li class="tecla preta" data-tecla="o"><span>o</span></li>
+      <li class="tecla branca" data-tecla="l"><span>l</span></li>
+      <li class="tecla preta" data-tecla="p"><span>p</span></li>
+      <li class="tecla branca" data-tecla=";"><span>;</span></li>
     </ul>
   </main>
   <script defer src="./src/scripts/main.js"></script>
